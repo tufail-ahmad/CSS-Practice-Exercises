@@ -4,7 +4,8 @@
 <head>
   <title>Myntra Clone</title>
   <link rel="stylesheet" href="index.css">
-</head>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,200,0..1,-50..200" />
 
 <body>
   <header>
@@ -12,15 +13,31 @@
       <a href="#"><img class="myntra_home" src="images/myntra_logo.webp" alt="myntra logo"></a>
     </div>
     <nav class="navbar_container">
-      <a href="#">Home</a>
-      <a href="#">Women
-        <a href="#">Kids</a>
-        <a href="#">Home & Living</a>
-        <a href="#">Beauty</a>
-        <a href="#">Studio<sup>New</sup></a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Home & Living</a>
+      <a href="#">Beauty</a>
+      <a href="#" class="studio">Studio<sup>New</sup></a>
     </nav>
-    <div class="search_bar_container">search container</div>
-    <div class="action_bar_container">action container</div>
+    <div class="search_bar_container">
+      <span class="material-symbols-outlined search_icon">search</span>
+      <input class="search_input" placeholder="Search for products, brands and more">
+    </div>
+    <div class="action_bar_container">
+      <div class="action_container">
+        <span class="material-symbols-outlined action_icon">person</span>
+        <span class="action_name" id="profile">Profile</span>
+      </div>
+      <div class="action_container">
+        <span class="material-symbols-outlined action_icon">favorite</span>
+        <span class="action_name">Wishlist</span>
+      </div>
+      <div class="action_container">
+        <span class="material-symbols-outlined action_icon">shopping_bag</span>
+        <span class="action_name">Bag</span>
+      </div>
+    </div>
   </header>
   <main>Content</main>
   <footer>Footer</footer>
