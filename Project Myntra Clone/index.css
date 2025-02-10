@@ -7,6 +7,7 @@
 }
 header {
   position: fixed;
+  top: 0px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -105,4 +106,163 @@ header {
 }
 #profile:hover {
   border-bottom: 3px solid red;
+}
+
+/* This is main tag CSS */
+.shop_base {
+  margin-top: 80px;
+  padding-top: 20px;
+}
+.Bcontainer {
+  height: 301px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.banner_container {
+  height: 100%;
+  width: 100%;
+}
+.banner {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.banner_img {
+  height: 100%;
+  width: 100%;
+}
+
+.Acontainer {
+  height: 17px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.ads_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.ad {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.ad_img {
+  height: 100%;
+  width: 100%;
+}
+
+.get_off {
+  height: 120px;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.OFF {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.off_img {
+  height: 100%;
+  width: 100%;
+}
+.Category {
+  height: 188px;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.catogory_items {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.item_img {
+  width: 100%;
+}
+
+footer {
+  bottom: 0px;
+}
+
+.OMGDeals_container {
+  height: 95px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.OMGdeals {
+  height: 100%;
+  width: 100%;
+}
+.OMGdeals_img {
+  height: 100%;
+  width: 100%;
+}
+
+.brands_container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 377px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.brands {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.brand_img {
+  height: 100%;
+  width: 100%;
+}
+
+.sbcImg_container {
+  height: 95px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.sbc {
+  height: 100%;
+  width: 100%;
+}
+.sbc_img {
+  height: 100%;
+  width: 100%;
+}
+
+.Off_category_container {
+  height: 250px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.Off_category_items {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.off_item_img {
+  height: 100%;
+  width: 100%;
+}
+.Off_category_items_div6 {
+  position: relative;
+  left: 230px;
+}
+.off_item_img_div6 {
+  width: 230px;
+}
+
+.app_img_container {
+  height: 210px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.app_img {
+  height: 100%;
+  width: 100%;
+}
+.mAPP {
+  height: 100%;
+  width: 100%;
 }
