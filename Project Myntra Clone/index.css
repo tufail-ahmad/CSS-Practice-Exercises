@@ -291,7 +291,8 @@ header {
 
 .footer_container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 30px;
   margin: 30px 0px 40px 0px;
   background: #fafbfc;
@@ -417,4 +418,84 @@ a {
   font-size: 15px;
   position: relative;
   right: -13%;
+}
+.popular_search {
+  overflow: hidden;
+  height: 131px;
+  width: 1080px;
+}
+.popular_search hr {
+  border: 1px;
+  height: 1px;
+  background-color: #eaeaec;
+}
+.psearch_title {
+  position: absolute;
+  margin-top: -10px;
+  background: #fafbfc;
+  padding-right: 10px;
+  color: #282c3f;
+  font-size: 12px;
+  font-weight: 700;
+}
+.psearch_links {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.other_link {
+  width: 30px;
+  text-decoration: none;
+  color: #696b79;
+  font-size: 15px;
+  line-height: 25px;
+}
+.other_link::after {
+  color: #696b79;
+  content: "|";
+  margin-left: 3px;
+}
+.finfo_section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 21px;
+  width: 1080px;
+}
+.contact {
+  color: #696b79;
+  height: 21px;
+}
+.copy_write {
+  color: #696b79;
+  height: 21px;
+}
+
+.flipkart_company {
+  color: #696b79;
+  height: 21px;
+}
+address {
+  margin: 30px 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #eaeaec;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 20px;
+  width: 1080px;
+}
+.address_title {
+  font-weight: 700;
+  color: #282c3f;
+  margin: 15px 0px;
+}
+.address_des {
+  width: 100%;
+  color: #94969f;
+}
+.legal_info {
+  float: right;
+}
+.span_2 {
+  color: #526cd0;
+  font-weight: 700;
 }
