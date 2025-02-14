@@ -6,6 +6,7 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+/* Header CSS Start */
 header {
   overflow: hidden;
   position: fixed;
@@ -42,17 +43,12 @@ header {
   color: #282c3f;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 30px 0;
+  padding: 28px 0;
   border-bottom: 3px solid #ffffff;
 }
 .navbar_container a:hover {
   overflow: hidden;
   border-bottom: 3px solid red;
-}
-.studio {
-  overflow: hidden;
-  position: relative;
-  bottom: 2.8px;
 }
 .navbar_container a sup {
   color: #ff3f6c;
@@ -120,12 +116,8 @@ header {
   border-bottom: 3px solid #ffffff;
   overflow: hidden;
 }
-#profile:hover {
-  border-bottom: 3px solid red;
-  overflow: hidden;
-}
 
-/* This is main tag CSS */
+/* Main CSS */
 .shop_base {
   margin-top: 80px;
   padding-top: 20px;
@@ -290,7 +282,6 @@ header {
 }
 /* footer CSS */
 footer {
-  background-color: #fafbfc;
   display: flex;
   justify-content: center;
   padding: 30px 0px 40px 0px;
@@ -370,8 +361,6 @@ footer {
   margin-top: 20px;
 }
 .socialmedia_img_container {
-  position: relative;
-  left: -7px;
   overflow: hidden;
 }
 .socialmedia_icon {
@@ -384,15 +373,20 @@ footer {
 .main_promises {
   overflow: hidden;
   height: 160px;
-  width: 250px;
+  width: 350px;
 }
-.promises {
+.promises_section {
   display: flex;
+  height: 42px;
+  width: 100%;
+  margin: 15px 0 30px;
+  color: #696b79;
+  overflow: hidden;
 }
 .promises_container {
+  padding-right: 10px;
   height: 42px;
-  width: 250px;
-  color: #696b79;
+  width: 70%;
   overflow: hidden;
 }
 .promises_img_container {
@@ -412,7 +406,7 @@ footer {
 .popular_search {
   overflow: hidden;
   height: 131px;
-  width: 1080px;
+  width: 100%;
 }
 .popular_search hr {
   border: 1px;
@@ -432,14 +426,14 @@ footer {
   margin-top: 30px;
   overflow: hidden;
 }
-.other_link {
+.psearch_link {
   width: 30px;
   text-decoration: none;
   color: #696b79;
   font-size: 15px;
   line-height: 25px;
 }
-.other_link::after {
+.psearch_link::after {
   color: #696b79;
   content: "|";
   margin-left: 3px;
@@ -449,7 +443,7 @@ footer {
   justify-content: space-between;
   margin-top: 40px;
   height: 21px;
-  width: 1080px;
+  width: 100%;
 }
 .contact {
   color: #696b79;
@@ -465,33 +459,40 @@ footer {
   height: 21px;
 }
 address {
-  margin: 30px 0;
-  padding: 20px 0 0;
+  margin-top: 30px;
+  padding-top: 20px;
   border-top: 1px solid #eaeaec;
   font-size: 15px;
   font-style: normal;
   line-height: 20px;
-  width: 1080px;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
 }
 .address_title {
+  height: 20px;
+  width: 100%;
+  font-size: 15px;
   font-weight: 700;
   color: #282c3f;
   margin: 15px 0px;
 }
 .address_des {
-  width: 100%;
+  width: 70%;
   color: #94969f;
+  line-height: 20px;
 }
 .legal_info {
+  height: 40px;
+  color: #94969f;
+  width: 30%;
   float: right;
-}
-.span_2 {
-  color: #526cd0;
-  font-weight: 700;
+  position: relative;
+  top: -40px;
 }
 
 .knowledged_container {
-  width: 1080px;
+  width: 100%;
   line-height: 18px;
   color: #94969f;
   font-size: 14px;
@@ -507,20 +508,29 @@ h3 {
   margin-bottom: -10px;
   margin-top: 30px;
   font-size: 14px;
-}
-.knowledged_container strong {
-  color: #535766 !important;
+  color: #535766;
   font-weight: 700;
 }
 .knowledged_container p {
-  margin: 14px 0px;
+  margin: 14px 0px 0px 0px;
+}
+.seolinks {
+  text-decoration: none;
+  color: #696b79;
+}
+.list_heading {
+  color: #535766;
+  font-weight: 700;
+}
+.unordered_list {
+  padding-left: 40px;
+  list-style: none;
+  box-sizing: content-box;
+}
+.unordered_list li {
+  margin: 14px 0px 14px 0px;
 }
 
-.list {
-  width: 1080px;
-  margin: 14px 0px;
-  padding-left: 40px;
-}
-.list li {
-  margin: 14px 0px;
+.unordered_list li::marker {
+  content: counter(list-item);
 }

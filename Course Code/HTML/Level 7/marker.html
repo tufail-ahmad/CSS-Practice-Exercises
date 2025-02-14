@@ -6,24 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>marker</title>
   <style>
-    ol {
+    ol li {
       font-size: 30px;
+      list-style-type: disc;
     }
 
     ol li::marker {
       color: red;
     }
 
-    .list {
-      font-size: 30px;
-    }
-
     .list li {
-      list-style-type: decimal;
+      font-size: 30px;
+      padding-left: 10px;
     }
 
-    .list li::marker {
-      color: rebeccapurple;
+    ::marker {
+      color: blueviolet;
       content: counter(list-item);
     }
   </style>
@@ -35,7 +33,7 @@
     <li>Past</li>
     <li>Future</li>
   </ol>
-  <ul class="list">
+  <ul class="list" style="list-style-type: decimal;">
     <li>Present</li>
     <li>Past</li>
     <li>Future</li>
