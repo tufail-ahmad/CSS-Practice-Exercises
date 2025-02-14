@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marker</title>
+  <style>
+    ol {
+      font-size: 30px;
+    }
+
+    ol li::marker {
+      color: red;
+    }
+
+    .list {
+      font-size: 30px;
+    }
+
+    .list li {
+      list-style-type: decimal;
+    }
+
+    .list li::marker {
+      color: rebeccapurple;
+      content: counter(list-item);
+    }
+  </style>
+</head>
+
+<body>
+  <ol>
+    <li>Present</li>
+    <li>Past</li>
+    <li>Future</li>
+  </ol>
+  <ul class="list">
+    <li>Present</li>
+    <li>Past</li>
+    <li>Future</li>
+  </ul>
+</body>
+
+</html>
