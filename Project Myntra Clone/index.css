@@ -4,101 +4,104 @@
   font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 /* Header CSS Start */
 header {
-  overflow: hidden;
-  position: fixed;
-  top: 0px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #ffffff;
   height: 80px;
   width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0px;
   z-index: 10;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
-.logo_container {
-  overflow: hidden;
-}
 .myntra_home {
-  width: 60px;
-  margin-left: 8%;
+  width: 53px;
 }
-.navbar_container {
-  overflow: hidden;
-  min-width: 515px;
-  display: flex;
-  justify-content: space-around;
-  margin: -20px;
+.logo_container {
+  margin-left: 4%;
+  box-sizing: content-box;
 }
 
-.navbar_container a {
-  overflow: hidden;
-  text-decoration: none;
-  font-size: 13px;
+.nav_bar {
+  width: 515px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav_bar a {
+  margin-left: 14px;
+  font-size: 14px;
   letter-spacing: 0.3px;
   color: #282c3f;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 28px 0;
+  text-decoration: none;
   border-bottom: 3px solid #ffffff;
+  padding: 27px 0;
 }
-.navbar_container a:hover {
-  overflow: hidden;
-  border-bottom: 3px solid red;
+.nav_bar a:hover {
+  border-bottom: 3px solid #ff3f6c;
+  padding: 27px 0;
 }
-.navbar_container a sup {
+.nav_bar a sup {
   color: #ff3f6c;
-  font-size: 10px;
+  top: -0.4rem;
   font-weight: 600;
+  line-height: 0;
   position: relative;
-  bottom: 5px;
-  overflow: hidden;
+  vertical-align: baseline;
+  text-transform: uppercase;
+  text-align: left;
 }
-.search_bar_container {
-  height: 40px;
-  min-width: 100px;
-  width: 30%;
+
+.search_bar {
+  min-width: 200px;
+  width: 27%;
+  height: 39px;
   display: flex;
   align-items: center;
+  margin: 20px -10px 20px 80px;
   overflow: hidden;
 }
-.search_icon {
-  height: 20px;
-  padding: 10px 0px 9px 10px;
+.icon_container {
   box-sizing: content-box;
-  color: #282c3f;
+  height: 28px;
+  width: 40px;
+  text-align: center;
+  padding: 8px 0 2px;
   background: #f5f5f6;
   border: 1px solid #f5f5f6;
+  border-right: none;
   border-radius: 4px 0 0 4px;
-  width: 21px;
-  height: 21px;
+}
+.search_icon {
+  color: #282c3f;
+  height: 20px;
   overflow: hidden;
 }
 .search_input {
+  flex-grow: 1;
   font-size: 14px;
-  height: 20px;
+  height: 22px;
+  line-height: 24px;
   color: #696e79;
   box-sizing: content-box;
-  padding: 10px 10px 10px 15px;
-  margin: 0;
-  outline: 0;
-  border: 1px solid #f5f5f6;
+  padding: 8px 10px 10px;
+  margin-left: -0.1px;
   border-radius: 0 4px 4px 0;
-  border-left: 0;
+  border: 0;
   background: #f5f5f6;
-  flex-grow: 1;
-  overflow: hidden;
 }
 
-.action_bar_container {
+.action_bar {
   display: flex;
+  min-width: 194px;
   justify-content: space-evenly;
-  width: 200px;
-  overflow: hidden;
+  margin-left: 10px;
 }
 .action_container {
   display: flex;
@@ -106,17 +109,14 @@ header {
   align-items: center;
   overflow: hidden;
 }
+.action-icon {
+  overflow: hidden;
+}
 .action_name {
   color: #000;
   font-size: 12px;
   font-weight: 700;
-  overflow: hidden;
 }
-#profile {
-  border-bottom: 3px solid #ffffff;
-  overflow: hidden;
-}
-
 /* Main CSS */
 .shop_base {
   margin-top: 80px;
@@ -285,6 +285,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 30px 0px 40px 0px;
+  background-color: #fafbfc;
 }
 .footer_container {
   max-width: 1080px;
