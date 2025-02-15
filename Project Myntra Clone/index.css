@@ -529,8 +529,6 @@ h3 {
 }
 .unordered_list li {
   margin: 14px 0px 14px 0px;
-}
-
-.unordered_list li::marker {
-  content: counter(list-item);
+  list-style-type: decimal;
+  list-style-position: inside;
 }
